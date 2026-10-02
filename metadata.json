@@ -1,0 +1,6 @@
+{
+  "name": "CS2 Upgrader & Case Opening",
+  "description": "Интерактивный сайт CS2 апгрейдера и открытия кейсов с реалистичной рулеткой, инвентарем и live-дропами",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

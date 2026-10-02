@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch ? window.fetch.bind(window) : null;
+          var activeFetch = originalFetch;
+
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return activeFetch || (window.fetch ? window.fetch.bind(window) : undefined);
+            },
+            set: function(fn) {
+              activeFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+
+          if (window.Window && window.Window.prototype) {
+            try {
+              var desc = Object.getOwnPropertyDescriptor(window.Window.prototype, 'fetch');
+              if (desc && !desc.set) {
+                Object.defineProperty(window.Window.prototype, 'fetch', {
+                  get: function() {
+                    return activeFetch || (window.fetch ? window.fetch.bind(window) : undefined);
+                  },
+                  set: function(fn) {
+                    activeFetch = fn;
+                  },
+                  configurable: true,
+                  enumerable: true
+                });
+              }
+            } catch (e2) {}
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>CS2 Upgrader &amp; Case Opening</title>
+    <meta name="description" content="Интерактивный сайт CS2 апгрейдера и открытия кейсов с реалистичной рулеткой, инвентарем и live-дропами" />
+    <meta property="og:title" content="CS2 Upgrader &amp; Case Opening" />
+    <meta property="og:description" content="Интерактивный сайт CS2 апгрейдера и открытия кейсов с реалистичной рулеткой, инвентарем и live-дропами" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#08090B] text-[#F5F5F5] antialiased select-none overflow-x-hidden font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

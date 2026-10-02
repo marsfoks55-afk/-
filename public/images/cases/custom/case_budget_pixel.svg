@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow_case_budget_pixel" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#080808" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="frameGrad_case_budget_pixel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Dark Minimal Canvas -->
+  <rect width="400" height="400" fill="#080808"/>
+  <rect width="400" height="400" fill="url(#bgGlow_case_budget_pixel)"/>
+
+  <!-- Subtle Precision Grid Lines -->
+  <line x1="40" y1="200" x2="360" y2="200" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="200" y1="40" x2="200" y2="360" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <circle cx="200" cy="200" r="170" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1" stroke-dasharray="2 6"/>
+
+  <!-- Border Card Frame -->
+  <rect x="24" y="24" width="352" height="352" rx="12" fill="none" stroke="url(#frameGrad_case_budget_pixel)" stroke-width="1"/>
+
+  <!-- Top Metadata Header -->
+  <text x="44" y="54" fill="#555555" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="2">CASER.GG // ORIGINALS</text>
+  <text x="356" y="54" fill="#8b5cf6" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="end" letter-spacing="1">BUDGET</text>
+
+  <!-- Central Editorial Motif -->
+  <g id="motif">
+    
+        <rect x="190" y="130" width="20" height="20" fill="#8b5cf6"/>
+        <rect x="170" y="150" width="20" height="20" fill="#8b5cf6" opacity="0.8"/>
+        <rect x="210" y="150" width="20" height="20" fill="#8b5cf6" opacity="0.8"/>
+        <rect x="150" y="170" width="20" height="20" fill="#8b5cf6" opacity="0.6"/>
+        <rect x="190" y="170" width="20" height="20" fill="#fff"/>
+        <rect x="230" y="170" width="20" height="20" fill="#8b5cf6" opacity="0.6"/>
+        <rect x="170" y="190" width="20" height="20" fill="#8b5cf6" opacity="0.8"/>
+        <rect x="210" y="190" width="20" height="20" fill="#8b5cf6" opacity="0.8"/>
+        <rect x="190" y="210" width="20" height="20" fill="#8b5cf6"/>
+        <rect x="190" y="230" width="20" height="20" fill="#8b5cf6" opacity="0.4"/>
+        
+  </g>
+
+  <!-- Bottom Title Label -->
+  <text x="200" y="328" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="3">PIXEL</text>
+  <text x="200" y="348" fill="#555555" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle" letter-spacing="1">SERIES 2026 // CASE ID #xel</text>
+
+  <!-- Corner Accents -->
+  <line x1="24" y1="36" x2="36" y2="24" stroke="#8b5cf6" stroke-width="1.5"/>
+  <line x1="376" y1="364" x2="364" y2="376" stroke="#8b5cf6" stroke-width="1.5"/>
+</svg>
